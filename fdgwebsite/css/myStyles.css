@@ -1,0 +1,357 @@
+/*---------------------------------------------------------------------
+                        IMPORTING GRID SYSTEM
+---------------------------------------------------------------------*/
+
+@import url(grid.css);
+
+
+/*---------------------------------------------------------------------
+                        WEBSITE COLOUR SCHEME
+---------------------------------------------------------------------*/
+
+/*Dark Colour colour: rgba(15,88,129, 1);
+link colour: rgba(34, 106, 144, 1); 
+
+TITLES IN WHITE
+
+PARAGRAPHS IN GREY 
+
+/*---------------------------------------------------------------------
+                        MOBILE DEFAULT STYLES - GLOBAL STYLES
+---------------------------------------------------------------------*/
+
+
+/* Prevents adjustments of font size after orientation change in IE on Windows phone and in IOS */
+html{
+    
+    -webkit-text-size-adjust:100%;
+    -ms-text-size-adjust:100%; 
+}
+
+
+/* Apply a natural box model layout to all elements */
+
+
+*{
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
+
+
+/* clearfix: Force an element not to collapse */
+
+.clear:after{
+    
+    content:"";
+    display: table;
+    clear:both;
+}
+
+/* All images and video set to 100% width of their parent container */
+
+img, video{
+    width: 100%;
+}
+
+
+body{
+    font-family: sans-serif;
+    font-size: 14px;
+    color: white;
+    width:100%;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    
+}
+
+/*-------------------------------------*/
+
+/*--------------Embed Fonts-----------*/
+
+
+
+
+.container{
+    width: 80%;
+    height: 100%;
+    margin: 100px auto;
+    
+    
+}
+
+
+/*---------------------------------------------------------------------
+                        THE HOME STYLES
+---------------------------------------------------------------------*/
+
+section.homeBg{
+    
+    position: relative;
+    background-image: url("../img/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 0;
+    width: 100%;
+    min-height: 37vh;
+    
+    
+}
+
+
+.logoC{
+/*
+    top: 3px;
+    left: 2px;
+    max-width: 100px;
+    max-height: 100px;
+    z-index: 110;
+    position: fixed;
+*/
+    
+    top: 3px;
+    left: 2px;
+    width: 18%;
+    height: auto;
+    z-index: 110;
+    position: fixed;
+    
+}
+
+
+.navC{
+    position: fixed;
+    top: 0;
+    background-color: white;
+    border-bottom: 2px solid rgba(100,100,100,0.5);
+    width: 100%;
+    border-bottom: 2px solid rgba(0,0,200,0.1);
+    height: 10vh;
+}
+nav{
+    background-color: white;
+    margin-top: -1.4vh;
+    
+}
+
+nav li a, nav li {
+    margin: 0%;
+    padding: 0%;
+    display:block;
+    width: 100%;
+    float: none;
+    outline-style: none !important;
+    text-decoration: none;  
+    
+}
+
+ /*&#9776; this is the code for 3 bar menu*/
+    .navBtn  {
+    font-size: 2.3em;
+    display: block;
+    width: 20%;
+    margin: 0 4vw 0 73vw;
+    padding: 7px 3%;
+    text-align: center;
+    cursor: pointer;
+    color:rgba(0,0,200,0.1);
+    background-color: rgba(255, 255, 255, 0.5);
+    }
+    
+.searchform{
+/*
+       margin-top: 20px;
+    display: inline-block;
+    width: auto;
+    margin-left: 19vw;
+*/
+    
+    position: absolute;
+    top: 3vh;
+    left: 25vw;
+    
+}
+
+
+ul.menu-items li {
+   margin-left: 0px;
+    padding-left: 0px;
+    background-color: white;
+    
+}
+
+.menu-items a {
+        
+        padding: 15px 5vw 15px 0;
+        color: blue;
+        text-align: right;
+    }
+    
+    .menu-items li {
+        
+        border-top: 3px solid rgba(194, 166, 255, 0.2); 
+    }
+
+.menu-items{
+    display: none;
+}
+
+.mainHeading{
+    
+    display: inline-block;
+    margin-top: 30vh;
+    margin-left: 40vw;
+    background-color:rgba(15,88,129, 1);
+    text-align: center;
+    
+}
+
+.section1{
+        margin: 10px auto;
+}
+
+.searchInput{
+    
+    width:90px;
+}
+
+
+article{
+    color: black;
+    border: none;
+   border-bottom: 2px solid rgba(0,0,200,0.1);
+}
+
+
+article h1{
+    font-size: 1.5em;
+    margin: 0.67em 0;
+    background-color: rgba(15,88,129, 1);
+    border-radius: 2px;
+    padding: 2px;
+    text-align: center;
+    color: white;
+}
+
+article h2{
+    font-size: 1em;
+}
+
+article p{
+    
+    font-size: 0.8em;
+}
+
+article a{
+    text-decoration: none;
+    color: rgba(15,88,129, 1);
+    
+}
+
+#bgVideo{
+    
+    display: none;
+}
+
+
+
+
+/*---------------------------------------------------------------------
+                 MOBILE STYLES - 568 SCREEN RESOLUTION
+---------------------------------------------------------------------*/
+
+
+@media screen and (min-width: 568px) {
+    
+    .container{
+        width: 90%;
+        margin: 50px auto;
+    }
+    
+    section.homeBg{
+     height: 85vh;
+    }
+    
+    .navC{
+     height: 23vh;
+    }
+    
+    .p1{
+        padding-left:5px;
+        
+        
+    }
+    
+    .navBtn{
+        
+    margin: 20px 0vw 0 80vw;
+        
+    }
+    .searchform{
+        top: 10vh;
+        left: 30vw;
+    }
+    
+    
+    
+    .searchInput{
+        width:150px;
+    }
+    
+    
+    .mainHeading{
+        
+    margin-top: 60vh;
+    margin-left: 54vw;
+    width: 263px;
+    border: 3px solid rgba(15,88,129, 1);
+    border-radius: 12px 0px 0px 12px;
+    }
+    
+    
+    .section1{
+/*         column-count: 2;*/
+        
+        
+    }
+    
+    article{
+        width: 40vw;
+        float: left;
+    }
+    
+    article h1{
+        
+        
+    }
+    
+
+    
+    
+}
+
+/*---------------------------------------------------------------------
+                TABLET STYLES - 768 SCREEN RESOLUTION
+---------------------------------------------------------------------*/
+
+
+@media screen and (min-width: 768px) {
+    
+    .section1{
+         column-count: 3;
+        
+    }
+    
+    
+}
+
+/*---------------------------------------------------------------------
+                 DESKTOP STYLES - 1024 SCREEN RESOLUTION
+---------------------------------------------------------------------*/
+
+
+@media screen and (min-width: 1024px) {
+    
+    
+}
